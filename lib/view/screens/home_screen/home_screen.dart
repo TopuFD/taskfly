@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:taskfly/controller/home-controller/home_controller.dart';
+import 'package:taskfly/core/app_route.dart';
 import 'package:taskfly/utils/image/logo.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,7 +18,11 @@ class HomeScreen extends StatelessWidget {
         surfaceTintColor: Colors.white,
         backgroundColor: Colors.white,
         actions: [
-          InkWell(onTap: () {}, child: SvgPicture.asset(Logo.microphone)),
+          InkWell(
+              onTap: () {
+                Get.toNamed(AppRoute.questionScreen);
+              },
+              child: SvgPicture.asset(Logo.microphone)),
           SizedBox(
             width: 5.w,
           ),
@@ -39,6 +44,7 @@ class HomeScreen extends StatelessWidget {
                   customHomeItem(
                       ontap: () {
                         homeController.isButtonIndex.value = 0;
+                        Get.toNamed(AppRoute.catagoryScreen);
                       },
                       index: 0,
                       iconData: Icons.picture_as_pdf,

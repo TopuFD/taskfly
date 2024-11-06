@@ -9,4 +9,14 @@ class Logo {
   static const search = "assets/svg-logo/search.svg";
   static const filter = "assets/svg-logo/filter.svg";
   static const short = "assets/svg-logo/shrot.svg";
+  static const cleaning = "assets/svg-logo/cleaning.svg";
+  static const assemble = "assets/svg-logo/assemble.svg";
+  static const handyman = "assets/svg-logo/handyman.svg";
+  static const delevery = "assets/svg-logo/delevery.svg";
+  static const gardening = "assets/svg-logo/gardening.svg";
+  static const removalList = "assets/svg-logo/removalList.svg";
+  static const admin = "assets/svg-logo/admin.svg";
+  static const computer = "assets/svg-logo/computer.svg";
+  static const photography = "assets/svg-logo/photography.svg";
+  static const other = "assets/svg-logo/other.svg";
 }
